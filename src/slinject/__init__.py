@@ -10,4 +10,6 @@ The DLL Injection Toolkit for Python.
 :license: MIT, see LICENSE for further details.
 """
 
+from .utils import *
+
 from .meta import *

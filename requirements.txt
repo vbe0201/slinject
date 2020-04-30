@@ -1,2 +1,5 @@
 # C FFI for DLL generation from Python code.
 cffi
+
+# Python bindings to the Windows API for DLL injection.
+pywin32>=227
