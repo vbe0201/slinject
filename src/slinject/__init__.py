@@ -10,6 +10,6 @@ Shared Library Injection Toolkit for Python.
 :license: MIT, see LICENSE for further details.
 """
 
-from .utils import *
-
+from .inject import *
 from .meta import *
+from .utils import *

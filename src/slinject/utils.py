@@ -31,7 +31,7 @@ if is_windows():
 
 #: Representation of the system information forwarded by `GetSystemInfo()`.
 #:
-#: NOTE: This type is only exposed to Windows systems.
+#: NOTE: This type is only meant for Windows systems.
 SystemInfo = namedtuple(
     'SystemInfo',
     [
