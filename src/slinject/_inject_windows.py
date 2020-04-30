@@ -15,9 +15,9 @@ if SYSTEM_INFO.architecture == 0:  # x86
     POINTER_WIDTH = 32
 
     LoadLibraryW_START = 0x0004 + 1
-    LoadLibraryW_END = LoadLibraryW_START + int(POINTER_WIDTH / 8)
+    LoadLibraryW_END = LoadLibraryW_START + POINTER_WIDTH >> 3
     GetLastError_START = 0x0011 + 1
-    GetLastError_END = GetLastError_START + int(POINTER_WIDTH / 8)
+    GetLastError_END = GetLastError_START + POINTER_WIDTH >> 3
 
     DLL_LOADER = bytearray(
         b'\xFF\x74\x24\x04'      # 0000: push DWORD PTR [esp+4]
