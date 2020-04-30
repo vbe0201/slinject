@@ -1,1 +1,1 @@
-# slinject: DLL Injection Toolkit in Python
+# slinject: Shared Library Injection Toolkit for Python
