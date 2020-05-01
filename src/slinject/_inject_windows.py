@@ -35,7 +35,7 @@ elif SYSTEM_INFO.architecture == 5:  # ARM
 elif SYSTEM_INFO.architecture in (6, 9):  # x64
     POINTER_WIDTH = 64
 elif SYSTEM_INFO.architecture == 12:  # AArch64
-    POINTER_WIDTH = 64
+    raise RuntimeError('AArch64 is unsupported by pywin32')
 else:  # Unknown architecture.
     raise RuntimeError('Unknown architecture')
 
